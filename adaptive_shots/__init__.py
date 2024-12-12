@@ -1,4 +1,4 @@
-from .adaptive import initialize_database, AdaptiveDatabase
+from .adaptive import initialize_database, AdaptiveShotDatabase
 
 __all__ = [
     'initialize_database',
