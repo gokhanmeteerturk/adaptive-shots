@@ -96,3 +96,24 @@ class AdaptiveShotDatabase:
 
         few_shot_prompt = "\n\n".join(str(shot) for shot in shot_list.prompts) + f"\n\n{prompt}"
         return few_shot_prompt, ids
+
+def initialize_database(db_location: str):
+    """Initializes the database at the given location."""
+    conn = sqlite3.connect(db_location)
+    conn.enable_load_extension(True)
+    sqlite_vec.load(conn)
+    conn.enable_load_extension(False)
+
+    conn.execute('''
+    CREATE TABLE IF NOT EXISTS qa_table (
+        id INTEGER PRIMARY KEY,
+        question TEXT NOT NULL,
+        answer TEXT NOT NULL,
+        domain TEXT NOT NULL,
+        rating FLOAT NOT NULL,
+        vector BLOB NOT NULL
+    );
+    ''')
+
+    conn.close()
+    return AdaptiveShotDatabase(db_location)
