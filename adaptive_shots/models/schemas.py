@@ -1,6 +1,6 @@
 from typing import List
 from pydantic import BaseModel, Field
-from typing_extensions import Annotated
+from typing import Annotated
 
 class RegisterPromptModel(BaseModel):
     """Schema for registering a new prompt with its answer and rating."""
