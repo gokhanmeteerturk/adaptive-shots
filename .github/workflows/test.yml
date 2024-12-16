@@ -35,9 +35,9 @@ jobs:
         run: |
           pytest --cov --cov-report=xml
 
-      # Step 5: Upload coverage report as an artifact (optional)
+      # Step 5: Upload coverage report to Codecov
       - name: Upload coverage reports to Codecov
-          uses: codecov/codecov-action@v5
-          with:
-            token: ${{ secrets.CODECOV_TOKEN }}
-            slug: gokhanmeteerturk/adaptive-shots
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: gokhanmeteerturk/adaptive-shots
