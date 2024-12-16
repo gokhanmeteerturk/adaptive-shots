@@ -25,9 +25,9 @@ Initially designed for my Intelligent Tutoring System (ITS) project, the package
 - **Exploration vs Exploitation**. 
 
 ## Flow
-
-WIP
-
+<p align="center">
+<img src="https://github.com/user-attachments/assets/20688df7-b89f-471a-8562-35fa29b10db5"/>
+</p>
 ## Installation
 
 ```bash
