@@ -95,7 +95,7 @@ def test_create_one_shot_prompt(db):
 
     assert shot_list is not None
     assert len(shot_list.prompts) == 1
-    assert 'Similar prompt' in prompt
+    assert 'Very similar prompt' in prompt
     assert 'Test answer' in prompt
 
 
