@@ -22,7 +22,7 @@ Initially designed for my Intelligent Tutoring System (ITS) project, the package
 - **Sentence transformers** for generating vector representations.  
   Defaults to `all-MiniLM-L6-v2` (384 dimensional dense vector space) but can be configured easily.
 - **SQLite Vector Search** with [sqlite-vec](https://github.com/asg017/sqlite-vec). (Cosine distance is used)
-- **Exploration vs Exploitation**. 
+- **Exploration vs Exploitation**. Adaptive-shots keeps experimenting with less-tried but still relevant old prompts, while focusing on maximizing the performance of generated few-shot prompts.
 
 ## Flow
 <p align="center">
@@ -131,7 +131,7 @@ Retrieves the optimal set of shots using the UCB algorithm.
 
 ## License
 
-This work is licensed under the GNU 3 - see the LICENSE file for details.
+This work is licensed under the GPLv3 - see the LICENSE file for details.
 
 ## Citation
 
