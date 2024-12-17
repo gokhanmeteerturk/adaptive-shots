@@ -1,7 +1,7 @@
 # Adaptive Shots - Few-shots prompting using Contextual Combinatorial Bandit optimizations
 
 ![build status](https://github.com/gokhanmeteerturk/adaptive-shots/actions/workflows/test.yml/badge.svg?branch=main)
-![Python](https://img.shields.io/pypi/pyversions/adaptive-shots.svg)
+![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)
 [![codecov](https://codecov.io/github/gokhanmeteerturk/adaptive-shots/branch/main/graph/badge.svg?token=375FXNSAFH)](https://codecov.io/github/gokhanmeteerturk/adaptive-shots) ![PyPI](https://img.shields.io/pypi/v/adaptive-shots) ![License](https://img.shields.io/badge/license-GPLv3-red) ![Downloads](https://img.shields.io/pypi/dm/adaptive-shots)
 
 <p align="center">  gokhanmeteerturk/adaptive-shots </p>
