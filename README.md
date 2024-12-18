@@ -1,4 +1,4 @@
-# Adaptive Shots - Few-shots prompting using Contextual Combinatorial Bandit optimizations
+# Adaptive Shots - Few-shot prompting using Contextual Combinatorial Bandit optimizations
 
 ![build status](https://github.com/gokhanmeteerturk/adaptive-shots/actions/workflows/test.yml/badge.svg?branch=main)
 ![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)
@@ -9,7 +9,7 @@
 
 ## Overview
 
-Adaptive Shots is a Python package that turns your prompts into <ins>few-shots prompts</ins> on the fly.
+Adaptive Shots is a Python package that turns your prompts into <ins>few-shot prompts</ins> on the fly.
 
 It automatically selects the most relevant prompt&answer pairs from the database based on what worked well before. Adaptive-shots package uses [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) algorithm [UCB1-Tuned](https://homes.di.unimi.it/~cesabian/Pubblicazioni/ml-02.pdf) and learns from user feedback to improve its selections over time by using the numerical feedback as a reward.
 
